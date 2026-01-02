@@ -13,19 +13,6 @@ This project **prototype** design in a developer-friendly codebase.
 - Contact form with dummy JavaScript submission
 - Footer with dynamic year and modal dialogs for Terms & Privacy
 
-Project Structure
-portfolio/
-├── index.html         # Main HTML file
-├── js/
-│   └── app.js         # JavaScript for nav toggle & form handling
-└── assets/
-├── images/
-│   ├── logo.png
-│   └── portrait.jpg
-|── video/
-|  ├── sample-shorts.mp4
-|  └── sample-vlog.mp4
-
 ---
 ## Getting Started
 1. **Clone or Download** this repository.
