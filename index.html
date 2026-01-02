@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor - Portfolio</title>
+    <meta name="description" content="Copywriter/Editor freelance website in black & white - sleek, simple, high-retention video editing." />
+    <meta name="theme-color" content="#000000"/>
+    
+    <meta property="og:title" content="Video Editor - Portfolio"/>
+    <meta property="og:description" content="Youtube vlogs and short-form editing with strong pacing, captions, and sound design." />
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="assets/images/portrait.jpg"/>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ["Inter", "system-ui", "Avenir", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+                },
+                colors: {
+                    brand: {
+                        DEFAULT: "#ffffff",
+                        dim: "#e5e7eb"
+                    },
+                    boxShadow: {
+                        glow: "0 0 0 1px rgba(255, 255, 255, 0.12), 0 10px 30px rgba(255, 255, 255, 0.08)",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</head>
+<body class="bg-black text-white font-sans antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 backdrop-blur-md bg-black/60 border-b border-white/10">
+        <nav class="mx-auto max-w-6xl px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="#home" class="flex items-center gap-3">
+                    <img src="assets/images/hero-logo.jpg" alt="logo" class="h-8 w-8 border rounded-full" />
+                    <span class="text-sm font-semibold tracking-wider uppercase">Video Editor - Portfolio</span>
+                </a>
+                <button id="nav-toggle" class="md:hidden p-2 rounded border border-white/20 hover:bg-white/10" aria-label="Open menu" aria-exapnded="false">
+                   <i class="fas fa-bars"></i>
+                </button>
+                <ul id="nav" class="hidden md:flex items-center gap-8 text-sm">
+                    <li><a class="hover:text-brand.dim" href="#about">About</a></li>
+                    <li><a class="hover:text-brand.dim" href="#skills">Skills</a></li>
+                    <li><a class="hover:text-brand.dim" href="#services">Services</a></li>
+                    <li><a class="hover:text-brand.dim" href="#work">Sample Works</a></li>
+                    <li><a class="hover:text-brand.dim" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <ul id="nav-mobile" class="md:hidden hidden pb-4 space-y-2 text-sm">
+                <li><a class="block px-2 py-1 rounded hover:bg-white/10" href="#about">About</a></li>
+                <li><a class="block px-2 py-1 rounded hover:bg-white/10" href="#skills">Skills</a></li>
+                <li><a class="block px-2 py-1 rounded hover:bg-white/10" href="#services">Services</a></li>
+                <li><a class="block px-2 py-1 rounded hover:bg-white/10" href="#work">Sample Works</a></li>
+                <li><a class="block px-2 py-1 rounded hover:bg-white/10" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="relative pt-28 md:pt-32">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="uppercase tracking[0.3em] text-sm text-white/40">Video Editor</p>
+                    <h1 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight">Video Editor - Portfolio</h1>
+                    <p class="mt-6 text-white/80 max-w-xl">Copywriter/Editor freelance website in black & white - sleek and simple style. I help creators turn raw footages
+                        into clean, engaging, high-retention videos through strong pacing, clear storytelling, captions, and sound design
+                        optimized for YouTube, TikTok, and Facebook shorts.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#work" class="inline-flex items-center gap-2 px-5 py-3 rounded bg-white text-black font-semibold hover:bg-brand.dim transition">See My Work
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="inline-block">
+                                <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="inline-flex items-center px-5 py-3 rounded border border-white/20 hover:bg-white/10 transition">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="assets/images/portrait.png" alt="Portrait" class="w-full rounded-lg shadow-glow ring-1 ring-white/10"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="mt-24 md:mt-32">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-2xl md:text-3xl font-bold">About Me</h2>
+                </div>
+                <div class="md:col-span-2 text-white/80">
+                    <p>
+                        Hi, I'm Pyx, a freelance video editor specializing in YouTube vlogs and short-form content for creators.
+                        I love turning messy timelines into tight, watchable stories that keep audiences engaged from hook to outro.
+                    </p>
+                    <p class="mt-24">
+                        My process focuses on pacing, narrative clarity, captions, and tasteful sound design-always tailored to the platform
+                        and your brand voice. Whether you're scaling shorts or polishing full-length vlogs,
+                        I'll help your content punch above its weight.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="mt-24 md:mt-32">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-2xl md:text-3xl font-bold">Skills & Services</h2>
+                    <p class="mt-3 text-white/70">What I can do for you.</p>
+                </div>
+                <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">YouTube vlog editing</h3>
+                        <p class="mt-2 text-white/70">Clean pacing, story clarity, retention-focused hooks.</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">TikTok / YouTube / Facebook Shorts</h3>
+                        <p class="mt-2 text-white/70">Snappy edits, captions, platform-native framing.</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Jump cuts & fast pacing</h3>
+                        <p class="mt-2 text-white/70">Trim the fat, keep momentum, maintain clarity</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Captions & Subtitles</h3>
+                        <p class="mt-2 text-white/70">High-retention on silent autoplay with styled captions.</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Sound design & audio cleanup.</h3>
+                        <p class="mt-2 text-white/70">Balanced mixes, tasteful SFX, noise reduction.</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Color Correction</h3>
+                        <p class="mt-2 text-white/70">Consistent skin tones, brand-aligned look, mood-aware grading.</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Basic Motion Graphics</h3>
+                        <p class="mt-2 text-white/70">Lower thirds, transitions, light kinetic typography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="mt-24 md:mt-32">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-2xl md:text-3xl font-bold">Additional Services</h2>
+                    <p class="mt-3 text-white/70">Content & Growth Support</p>
+                </div>
+                <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Website Copywriting</h3>
+                        <p class="mt-2 text-white/70">
+                            Clear messaging that converts casual viewers into subscribers.
+                        </p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Email Marketing</h3>
+                        <p class="mt-2 text-white/70">
+                            Nurture sequences and launch campaigns for new videos.
+                        </p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Press Releases</h3>
+                        <p class="mt-2 text-white/70">Announce collaborations and milestones.</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5 hover:bg-white/5 transition">
+                        <h3 class="font-semibold">Blogging & SEO</h3>
+                        <p class="mt-2 text-white/70">Evergreen content that ranks and funnels viewers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="mt-2 md:mt-32">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="flex items-end justify-between">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Sample Works</h2>
+                        <p class="mt-3 text-white/70">Shorts and long-form examples.</p>
+                    </div>
+                    <a href="#contact" class="hid md:inline-flex items-center gap-2 px-4 py-2 rounded border border-white/20 hover:bg-white/10 transition">Work Together
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    </a>
+                </div>
+                <div class="mt-8 grid md:grid-cols-2 gap-8">
+                    <article class="group">
+                        <div class="relative rounded-lg overflow-hidden border border-white/10 bg-white/5">
+                            <video controls preload="metadata" class="w-full aspect-video" controlsList="nodownload" oncontextmenu="return false;">
+                                <source src="assets/video/shorts.mp4" type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between">
+                            <h3 class="font-semibold">Shorts Video</h3>
+                            <span class="text-xs text-white/50">0:00 - 0:04</span>
+                        </div>
+                        <p class="mt-1 text-white/70">
+                            Fast-paced cut, captions, platform-native framing.
+                        </p>
+                    </article>
+                    <article class="group">
+                        <div class="relative rounded-lg overflow-hidden border border-white/10 bg-white/5">
+                            <video controls preload="metadata" class="w-full aspect-video" controlsList="nodownload" oncontextmenu="return false;"> 
+                                <source src="assets/video/youtube-vlogs.mp4" type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between">
+                            <h3 class="font-semibold">YouTube Vlogs</h3>
+                            <span class="text-xs text-white/50">0:00 - 6:00</span>
+                        </div>
+                        <p class="mt-1 text-white/70">Narrative clarity, pacing, color, and light motion graphics.</p>
+                    </article>
+                </div>
+            </div>
+    </section>
+    <section id="contact" class="mt-24 md:mt-32">
+        <div class="mx-auto max-w-6xl gap-8">
+            <div class="md:col-span-1">
+                <h2 class="text-2xl md:text-3xl font-bold">Get in Touch</h2>
+                <p class="mt-3 text-white/70">Drop me a line or two if you want to work together.</p>
+            </div>
+            <div class="md:col-span-2">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="rounded-lg border border-white/10 p-5">
+                        <p class="text-white/60">Phone</p>
+                        <a class="mt-1 block text-lg font-semibold hover:underline" href="+639098673641">+63 909 867 3641</a>
+                    </div>
+                    <div class="rounded-lg border border-white/10 p-5">
+                        <p class="text-white/60 text-sm">Email</p>
+                        <a class="mt-1 block text-lg font-semibold hover:underline" href="mailto:redlienuexvane@gmail.com">redlienuexvane@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <form id="contact-form" class="mt-8 grid gap-4 sm:grid-cols-2" aria-label="Contact form">
+                <div class="sm:col-span-1">
+                    <label for="name" class="block text-sm text-white/70">Name</label>
+                    <input id="name" name="name" type="text" required class="mt-1 w-full rounded bg-black border border-white/20 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white/30" />                
+                </div>
+                <div class="sm:col-span-1">
+                    <label for="email" class="block text-sm text-white/70">Email</label>
+                    <input id="email" name="email" type="email" required class="mt-1 w-full rounded bg-black border border-white/20 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white/30" />
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block text-sm text-white/70">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 w-full rounded bg-black border border-white/20 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white/30"></textarea>
+                </div>
+                <div class="sm:col-span-2 flex items-center gap-3">
+                    <button type="submit" class="inline-flex items-center gap-2 px-5 py-3 rounded bg-white text-black font-semibold hover:bg-brand.dim transition">
+                        Send Message
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <p id="form-status" class="text-sm text-white/70" role="status" aria-live="polite"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="mt-24 md:mt-32 border-t border-white/10">
+        <div class="mx-auto max-w-6xl px-4 py-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/60 text-sm">&copy;
+                <span id="year"></span> Pyx. All Rights Reserved. </p>
+                <div class="flex items-center gap-4 text-sm">
+                    <a class="hover:text-brand.dim underline" href="#terms" onclick="document.getElementById('terms-modal').showModal(); return false;">Terms & Support</a>
+                    <a class="hover:text-brand.dim underline" href="#privacy" onclick="document.getElementById('privacy-modal').showModal(); return false;">Privacy Policy</a>
+                    <span class="text-white/40">Designed with Pyx.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <dialog id="terms-modal" class="backdrop:bg-black/70 rounded max-w-2xl w-[92%] p-0">
+        <div class="bg-black text-white rounded overflow-hidden border border-white/20">
+            <div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
+                <h3 class="font-semibold">Terms & Support</h3>
+                <button class="p-2 hover:bg-white/10 rounded" onclick="document.getElementById('terms-modal').close()" aria-label="Close terms">X</button>
+            </div>
+            <div class="p-4 text-sm text-white/80 space-y-4 leading-relaxed">
+                <p>This website is a personal portfolio. All sample works are used for demonstration purposes only.</p>
+                <p>For inquiries, contact: <a class="underline" href="mailto:redlienuexvane@gmail.com">redlienuexvane@gmail.com</a></p>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="privacy-modal" class="backdrop:bg-black/70 rounded max-w-2xl w-[92%] p-0">
+        <div class="bg-black text-white rounded overflow-hidden border border-white/20">
+            <div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
+                <h3 class="font-semibold">Privacy Policy</h3>
+                <button class="p-2 hover:bg-white/10 rounded" onclick="document.getElementById('privacy-modal').close()" aria-label="Close privacy">X</button>
+            </div>
+            <div class="p-4 text-sm text-white/80 space-y-4 leading-relaxed">
+                <p>Any personal data you provide through the contact form will be used solely to respond to your inquiry.</p>
+                <p>We do not sell or share your information with third parties. You can request deletion at any time via email.</p>
+            </div>
+        </div>
+    </dialog>
+    <script src="script.js" defer></script>
+</body>
+</html>
