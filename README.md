@@ -13,7 +13,7 @@ This project **prototype** design in a developer-friendly codebase.
 - Contact form with dummy JavaScript submission
 - Footer with dynamic year and modal dialogs for Terms & Privacy
 
---- Project Structure
+Project Structure
 portfolio/
 ├── index.html         # Main HTML file
 ├── js/
